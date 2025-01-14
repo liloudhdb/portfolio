@@ -1,0 +1,237 @@
+/********************PAGE PRINCIPALE******************/
+
+/* Style pour le header */
+body {
+  position: relative;
+}
+.hero {
+  height: 100vh; /* Le header occupe toute la hauteur de l'écran */
+  background-color: #f4f4f4; /* Couleur d'arrière-plan */
+  display: flex; /* Flexbox pour organiser les éléments */
+  flex-direction: column; /* Les éléments sont empilés verticalement */
+  justify-content: center; /* Centrer les éléments verticalement */
+  align-items: center; /* Centrer les éléments horizontalement */
+  text-align: center; /* Centrer le texte */
+  padding: 20px; /* Espacement intérieur pour éviter que le contenu touche les bords */
+
+  background-image: url("images/images.jpg"); /* Chemin vers l'image */
+  background-size: cover; /* L'image couvre toute la page */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  height: 100vh; /* Hauteur de la page */
+  margin: 0; /* Supprime les marges */
+}
+
+/* Style pour le titre principal */
+.hero h1 {
+  font-size: 6rem; /* Taille du titre */
+  font-family: "Imperial Script", serif;
+  font-style: normal;
+  margin-bottom: 10px; /* Espacement entre h1 et h6 */
+  color: #333; /* Couleur sombre */
+}
+
+/* Style pour le sous-titre */
+.hero h6 {
+  font-size: 1.2rem; /* Taille du sous-titre */
+  margin-bottom: 20px; /* Espacement entre h6 et le menu */
+  color: #d0dcec; /* Couleur légèrement plus claire */
+}
+
+/* Style pour le menu de navigation */
+nav {
+  margin-top: 10px; /* Espacement au-dessus du menu */
+}
+
+.nav-buttons {
+  list-style: none; /* Supprime les puces de la liste */
+  display: flex; /* Affiche les éléments côte à côte */
+  gap: 15px; /* Espacement entre les boutons */
+  padding: 0; /* Supprime le padding par défaut de la liste */
+  margin: 0; /* Supprime les marges de la liste */
+}
+
+/* Style pour les boutons du menu */
+.nav-buttons li {
+  list-style: none; /* Supprime les puces */
+}
+
+.nav-buttons button {
+  padding: 20px 30px; /* Espacement interne du bouton */
+  font-size: 1rem; /* Taille du texte du bouton */
+  color: rgb(255, 255, 255); /* Couleur du texte */
+  background-color: #0057b3; /* Couleur bleue */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur en forme de main au survol */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition pour le survol */
+}
+
+/* Effet au survol du bouton */
+.nav-buttons button:hover {
+  background-color: #03356c; /* Couleur bleue foncée au survol */
+  transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+/* Style pour le header des autres sections */
+.explore-header {
+  color: rgb(26, 26, 93);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Henny Penny", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.explore-header h1 {
+  font-size: 2.5rem;
+}
+
+/********************PAGE PROJETS*****************/
+
+/* Conteneur des blocs */
+.project-container {
+  display: flex; /* Disposition en ligne */
+  justify-content: center; /* Centrer les blocs horizontalement */
+  gap: 60px; /* Espacement entre les blocs */
+  margin: 40px 0; /* Espacement vertical */
+}
+
+/* Style des blocs */
+.project {
+  width: 300px; /* Largeur du bloc */
+  height: 300px; /* Hauteur du bloc (carré) */
+  background-color: #2a5685; /* Couleur de fond bleue */
+  color: white; /* Couleur du texte */
+  display: flex; /* Centrer le contenu */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 30px; /* Coins arrondis */
+  cursor: pointer; /* Curseur interactif */
+  transition: transform 0.3s ease, background-color 0.3s ease; /*couleur de fond passera progressivement en 0,3s */
+}
+
+/* Effet au survol */
+.project:hover {
+  background-color: #20466c; /* Couleur bleue plus foncée */
+  transform: scale(1.1); /* Agrandissement */
+}
+
+/********************PAGE MOI********************/
+
+/********************PAGE EXPE******************/
+
+.container {
+  display: flex; /* Utilisation de Flexbox */
+  height: 100vh; /* Hauteur de la page */
+  justify-content: space-around; /* Garde les colonnes séparées horizontalement */
+  align-items: center; /* Centrer verticalement les contenus dans leurs colonnes */
+  height: 100px; /* Ajustez la hauteur totale pour voir l'effet */
+}
+
+.left,
+.right {
+  flex: 1; /* Chaque colonne prend 50% de la largeur */
+  align-items: center;
+  text-align: center;
+  font-size: 2rem; /* Ajustez la taille selon vos préférences */
+  font-weight: bold; /* Optionnel : pour rendre le texte plus visible */
+}
+
+.left {
+  background-color: #bdcef9; /* Couleur de fond gauche */
+}
+
+.right {
+  background-color: hsl(221, 79%, 83%); /* Couleur de fond droite */
+}
+
+.profile-img {
+  width: 500px; /* Largeur de l'image */
+  height: auto; /* Maintient les proportions */
+  float: right; /* Place l'image sur le côté gauche */
+  margin: 20px; /* Ajoute un espace autour de l'image */
+  border-radius: 10px; /* Coins arrondis pour l'image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre autour de l'image */
+}
+
+.menu-img:hover {
+  transform: scale(1.3); /* Agrandit légèrement l'icône au survol */
+  transition: transform 0.2s ease; /* Animation fluide */
+}
+.mainmenubtn {
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+  top: 10px;
+  right: 10px;
+}
+.mainmenubtn:hover {
+  background-color: rgb(193, 193, 193);
+  position: absolute;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  margin: 30px;
+}
+
+.dropdown-child {
+  display: none;
+  position: absolute;
+  background-color: #f4f4f4;
+  min-width: 150px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-child a {
+  color: #0057b3;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-child a:hover {
+  background-color: #d0dcec;
+}
+
+.dropdown:hover .dropdown-child {
+  display: block;
+}
+
+/* Project container styles */
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  width: 200px;
+  height: 200px;
+  background-color: #2a5685;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.project:hover {
+  background-color: #20466c;
+  transform: scale(1.1);
+}
